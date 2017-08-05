@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Speakup</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="Speed">
+
+
+        <item>Very Slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Very Fast</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3F51B5">
+
+    <EditText
+        android:id="@+id/InputField"
+        android:lines="2"
+        android:hint="Type what you want to say!!"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="fill_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="40dp">
+        <Button
+            android:layout_height="wrap_content"
+            android:id="@+id/SpeakButton"
+            android:ems="15"
+            android:text="S p e a k!!"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#008800"
+            android:elevation="24dp"/>
+
+        <Button
+            android:id="@+id/ClearField"
+            android:text="C l e a r"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:ems="15"
+            android:layout_gravity="center_horizontal"
+            android:background="#990000"
+            android:layout_marginTop="10dp"
+            android:elevation="24dp"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/VolumeBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:soundEffectsEnabled="true"
+        android:layout_marginTop="40dp">
+    </SeekBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:textSize="20dp"
+        android:id="@+id/text_view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_alignParentTop="true">
+        </Spinner>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/hello"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/spinner1"
+            android:background="#ffe0bd"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="how are you?"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/how"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/spinner1"
+            android:background="#ffe0bd"
+            android:layout_marginRight="10dp"
+            android:ems="8"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Be Happy"
+            android:background="#ffe0bd"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/behappy"
+            android:layout_below="@+id/takecare"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WElcome"
+            android:background="#ffe0bd"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/welcome"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/how"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="8"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hi"
+            android:background="#ffe0bd"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/hi"
+            android:layout_below="@id/behappy"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="give me glass of water"
+            android:id="@+id/water"
+            android:background="#ffe0bd"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/see"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="8"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="take care"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/takecare"
+            android:background="#ffe0bd"
+            android:layout_below="@+id/hello"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See you again"
+            android:background="#ffe0bd"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/see"
+            android:layout_below="@+id/welcome"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="8"/>
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>
